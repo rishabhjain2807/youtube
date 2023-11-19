@@ -17,11 +17,14 @@ const Head = () => {
           alt="menu"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png"
         />
-        <img
-          className="h-8 mx-2"
-          alt="youtube logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png"
-        />
+        <a href="/">
+          {" "}
+          <img
+            className="h-8 mx-2"
+            alt="youtube logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png"
+          />
+        </a>
       </div>
 
       <div className="col-span-10 px-10">
