@@ -4,12 +4,12 @@ const searchSlice = createSlice({
   name: "search",
   initialState: {},
   reducers: {
-    cacheResults: (state, action) => {
+    cacheSuggestions: (state, action) => {
       state = Object.assign(state, action.payload);
     },
   },
 });
 
-export const { cacheResults } = searchSlice.actions;
+export const { cacheSuggestions } = searchSlice.actions;
 
 export default searchSlice.reducer;

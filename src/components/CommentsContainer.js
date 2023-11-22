@@ -1,59 +1,25 @@
 import React from "react";
+import CommentsList from "./CommentsList";
 
 const commentsData = [
   {
-    name: "akshay saini",
-    text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "id labore ex et quam laborum",
+    text: "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
     replies: [
       {
-        name: "akshay saini",
-        text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        replies: [],
-      },
-      {
-        name: "akshay saini",
-        text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        replies: [],
-      },
-    ],
-  },
-  {
-    name: "akshay saini",
-    text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    replies: [
-      {
-        name: "akshay saini",
-        text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        replies: [],
-      },
-      {
-        name: "akshay saini",
-        text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        replies: [],
-      },
-      {
-        name: "akshay saini",
-        text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        name: "quo vero reiciendis velit similique earum",
+        email: "Jayne_Kuhic@sydney.com",
+        text: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
         replies: [
           {
-            name: "akshay saini",
-            text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            replies: [],
-          },
-          {
-            name: "akshay saini",
-            text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            name: "quo vero reiciendis velit similique earum",
+            email: "Jayne_Kuhic@sydney.com",
+            text: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
             replies: [
               {
-                name: "akshay saini",
-                text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                replies: [
-                  {
-                    name: "akshay saini",
-                    text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    replies: [],
-                  },
-                ],
+                name: "quo vero reiciendis velit similique earum",
+                email: "Jayne_Kuhic@sydney.com",
+                text: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
               },
             ],
           },
@@ -62,76 +28,40 @@ const commentsData = [
     ],
   },
   {
-    name: "akshay saini",
-    text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    name: "quo vero reiciendis velit similique earum",
+    email: "Jayne_Kuhic@sydney.com",
+    text: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
+  },
+  {
+    name: "quo vero reiciendis velit similique earum",
+    email: "Jayne_Kuhic@sydney.com",
+    text: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
+  },
+  {
+    name: "quo vero reiciendis velit similique earum",
+    email: "Jayne_Kuhic@sydney.com",
+    text: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
     replies: [
       {
-        name: "akshay saini",
-        text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        name: "quo vero reiciendis velit similique earum",
+        email: "Jayne_Kuhic@sydney.com",
+        text: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
         replies: [
           {
-            name: "akshay saini",
-            text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            replies: [],
-          },
-          {
-            name: "akshay saini",
-            text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            replies: [],
+            name: "quo vero reiciendis velit similique earum",
+            email: "Jayne_Kuhic@sydney.com",
+            text: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
           },
         ],
       },
     ],
   },
-  {
-    name: "akshay saini",
-    text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    replies: [],
-  },
-  {
-    name: "akshay saini",
-    text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    replies: [],
-  },
-  {
-    name: "akshay saini",
-    text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    replies: [],
-  },
 ];
-
-const Comment = ({ data }) => {
-  const { name, text, replies } = data;
-  return (
-    <div className="flex shadow-sm bg-gray-100 p-2 rounded-lg my-2">
-      <img
-        className="w-12 h-12"
-        alt="user"
-        src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
-      />
-      <div className="px-3">
-        <p className="font-bold">{name}</p>
-        <p>{text}</p>
-      </div>
-    </div>
-  );
-};
-
-const CommentsList = ({ comments }) => {
-  return comments.map((comment, index) => (
-    <div key={index}>
-      <Comment key={index} data={comment} />
-      <div className="pl-5 border border-l-black ml-5">
-        <CommentsList comments={comment.replies} />
-      </div>
-    </div>
-  ));
-};
 
 const CommentsContainer = () => {
   return (
-    <div className="m-5 p-2">
-      <h1 className="text-2xl font-bold">comments:</h1>
+    <div>
+      <h1 className="text-lg font-medium mb-2">Comments</h1>
       <CommentsList comments={commentsData} />
     </div>
   );
